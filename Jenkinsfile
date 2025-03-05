@@ -5,7 +5,9 @@ pipeline {
         maven 'Maven 3.8.6'
         jdk 'Java 17'
     }
-
+   environment {
+        SONARQUBE_ENV = 'SonarQube'
+    }
     stages {
 
         stage('Build') {
